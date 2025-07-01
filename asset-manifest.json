@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/axit-site/static/css/main.706a1efa.css",
+    "main.js": "/axit-site/static/js/main.20da0c2e.js",
+    "static/js/787.4b26e9c7.chunk.js": "/axit-site/static/js/787.4b26e9c7.chunk.js",
+    "static/media/portfolio-background.jpg": "/axit-site/static/media/portfolio-background.e2410a0a360e04392382.jpg",
+    "static/media/banner-background.jpg": "/axit-site/static/media/banner-background.dc567adbe1766b040f6b.jpg",
+    "static/media/Roboto-Regular.woff": "/axit-site/static/media/Roboto-Regular.774f99460b8c31560a3c.woff",
+    "static/media/Raleway-Bold.woff": "/axit-site/static/media/Raleway-Bold.669ff3b37217225a0735.woff",
+    "static/media/Raleway-Regular.woff": "/axit-site/static/media/Raleway-Regular.a582669062b72fd23826.woff",
+    "static/media/Raleway-Light.woff": "/axit-site/static/media/Raleway-Light.978ab75b9a974c5494eb.woff",
+    "static/media/OpenSans-Regular.woff": "/axit-site/static/media/OpenSans-Regular.03a20a68b7c3b6428403.woff",
+    "static/media/OpenSans-SemiBold.woff": "/axit-site/static/media/OpenSans-SemiBold.4b5414a77a16fb6e8324.woff",
+    "static/media/OpenSans-Bold.woff": "/axit-site/static/media/OpenSans-Bold.178d6be840da0898d9b3.woff",
+    "static/media/Roboto-Regular.woff2": "/axit-site/static/media/Roboto-Regular.9429985be4f46ec8fcfc.woff2",
+    "static/media/Raleway-Bold.woff2": "/axit-site/static/media/Raleway-Bold.37ef5663ade70b5e6f59.woff2",
+    "static/media/Raleway-Regular.woff2": "/axit-site/static/media/Raleway-Regular.33198fefc88d2ffdb916.woff2",
+    "static/media/Raleway-Light.woff2": "/axit-site/static/media/Raleway-Light.9fefc41a1197a29a0060.woff2",
+    "static/media/OpenSans-Regular.woff2": "/axit-site/static/media/OpenSans-Regular.6fdfc32f958aca18e06f.woff2",
+    "static/media/OpenSans-SemiBold.woff2": "/axit-site/static/media/OpenSans-SemiBold.0a5c133db8db023b7e79.woff2",
+    "static/media/OpenSans-Bold.woff2": "/axit-site/static/media/OpenSans-Bold.9e4646a97275c486ddef.woff2",
+    "static/media/tabs-image-1.png": "/axit-site/static/media/tabs-image-1.816fd83be051da337455.png",
+    "static/media/benefit-card-2.svg": "/axit-site/static/media/benefit-card-2.8db0ed5d30c27ad4fd4fc35b6ce6dcc1.svg",
+    "static/media/instagram.svg": "/axit-site/static/media/instagram.d9982b67b222b27184fdaaa74382e28b.svg",
+    "static/media/twitter.svg": "/axit-site/static/media/twitter.02b3553e89d13658fc3779669a83603b.svg",
+    "static/media/pinterest.svg": "/axit-site/static/media/pinterest.f43842eb116a91394afa3615be232e5e.svg",
+    "static/media/benefit-card-1.svg": "/axit-site/static/media/benefit-card-1.ae8185fffc08d24fe41853d730161981.svg",
+    "index.html": "/axit-site/index.html",
+    "static/media/google-plus.svg": "/axit-site/static/media/google-plus.af729f36882a0f25632faa7d889427a9.svg",
+    "static/media/rss.svg": "/axit-site/static/media/rss.73d80233386e30dedf0b64115378f591.svg",
+    "static/media/stumbleupon.svg": "/axit-site/static/media/stumbleupon.63936dc097612c103bebd2e57671515e.svg",
+    "static/media/benefit-card-3.svg": "/axit-site/static/media/benefit-card-3.8fd0f28124b697aa072c78bab2e600a4.svg",
+    "static/media/facebook.svg": "/axit-site/static/media/facebook.0d6edd26bfa2e4cdc345126c947f7e98.svg",
+    "main.706a1efa.css.map": "/axit-site/static/css/main.706a1efa.css.map",
+    "main.20da0c2e.js.map": "/axit-site/static/js/main.20da0c2e.js.map",
+    "787.4b26e9c7.chunk.js.map": "/axit-site/static/js/787.4b26e9c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.706a1efa.css",
+    "static/js/main.20da0c2e.js"
+  ]
+}
