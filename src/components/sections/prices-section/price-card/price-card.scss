@@ -1,0 +1,68 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/functions';
+@import '../../../../scss/mixins';
+
+.price-card {
+  &:nth-child(2) {
+    margin-top: rem-calc(-16);
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    background-color: $gray;
+
+    > * {
+      border-top: 1px solid $white-100;
+      border-bottom: 1px solid $white-100;
+    }
+  }
+
+  &__plan {
+    padding: rem-calc(15);
+    font-size: $fsz-20;
+    line-height: unitless-lh(20, 27);
+    font-weight: $font-weight-bold;
+    color: $white;
+    text-align: center;
+  }
+
+  &__cost {
+    padding: rem-calc(30);
+    font-family: $raleway-font;
+    font-size: $fsz-35;
+    font-weight: $font-weight-bold;
+    line-height: unitless-lh(35, 41);
+    color: $white;
+    text-align: center;
+  }
+
+  &__period {
+    padding: rem-calc(15);
+    font-size: $fsz-14;
+    font-weight: $font-weight-semi-bold;
+    line-height: unitless-lh(14, 19);
+    color: $white-t-50;
+    text-align: center;
+  }
+
+  &__benefits {
+    margin-top: rem-calc(2);
+    background-color: $white;
+  }
+
+  &__benefits-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__benefits-item {
+    padding: rem-calc(10);
+    font-size: $fsz-14;
+    line-height: unitless-lh(14, 19);
+    border-top: 2px solid $white-100;
+    border-bottom: 2px solid $white-100;
+    color: $gray-100;
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+@import "./functions";
+@import "./variables";
+
+/* Media queries */
+
+@mixin media-breakpoint-up($name) {
+  $min: breakpoint-min($name);
+
+  @if $min {
+    @media screen and (min-width: $min) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($name) {
+  $max: breakpoint-max($name);
+
+  @if $max {
+    @media screen and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+/* Media queries */
+
+@mixin section-grid-markup() {
+  &__title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .decorative-line {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  &__subtitle {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+}

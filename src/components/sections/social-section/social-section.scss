@@ -1,0 +1,49 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.social-section {
+  background-color: $white-200;
+
+  &__container {
+    display: grid;
+    gap: rem-calc(14);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, max-content);
+    padding: rem-calc(16);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: initial;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $fsz-20;
+    font-weight: $font-weight-bold;
+    line-height: unitless-lh(20, 27);
+    color: $gray;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+
+  .section-subtitle {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  .social-items {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+
+    @include media-breakpoint-down(sm) {
+      grid-column: initial;
+      grid-row: initial;
+    }
+  }
+}

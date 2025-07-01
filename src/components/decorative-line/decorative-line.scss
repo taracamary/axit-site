@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.decorative-line {
+  margin: auto;
+  width: rem-calc(64);
+  height: rem-calc(1);
+  border: none;
+  border-top-width: 2px;
+  border-top-style: solid;
+
+  &--white {
+    margin-left: 0;
+    border-top-color: $white;
+  }
+
+  &--coral {
+    border-top-color: $coral;
+  }
+}

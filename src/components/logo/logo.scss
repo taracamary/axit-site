@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.logo {
+  font-family: $roboto-font;
+  font-weight: $font-weight-regular;
+  color: $white;
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+
+  &--accent {
+    color: $coral;
+  }
+
+  &__small {
+    font-size: $fsz-30;
+    line-height: unitless-lh(30, 35);
+  }
+
+  &__large {
+    margin-bottom: rem-calc(32);
+    font-size: $fsz-60;
+    line-height: unitless-lh(60, 70);
+  }
+}

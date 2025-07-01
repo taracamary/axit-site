@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.header {
+  background-color: $black;
+  padding: rem-calc(25) 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

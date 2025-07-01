@@ -1,0 +1,54 @@
+@import "./fonts";
+@import "./functions";
+
+/* Media breakpoints */
+
+$grid-breakpoints: (
+  'xs' : 480px,
+  'sm' : 575px,
+  'md' : 768px,
+  'lg' : 992px,
+  'xl' : 1240px,
+);
+
+/* Sizes */
+
+$fsz-14: rem-calc(14);
+$fsz-15: rem-calc(15);
+$fsz-16: rem-calc(16);
+$fsz-20: rem-calc(20);
+$fsz-30: rem-calc(30);
+$fsz-35: rem-calc(35);
+$fsz-36: rem-calc(36);
+$fsz-60: rem-calc(60);
+
+/* Fonts */
+
+$open-sans-font:  "Open Sans", "Arial", sans-serif;
+$raleway-font:    "Raleway", "Arial", sans-serif;
+$roboto-font:     "Roboto", "Arial", sans-serif;
+
+$font-weight-light:       300;
+$font-weight-regular:     400;
+$font-weight-semi-bold:   600;
+$font-weight-bold:        700;
+
+/* Colors pallet */
+
+$black:       #000000;
+$black-200:   #212121;
+$gray:        #333333;
+$gray-100:    #86878B;
+$gray-200:    #BDBDBD;
+$gray-300:    #C4C4C4;
+$gray-400:    #E2E2E2;
+$red:         #E72424;
+$coral:       #EC7979;
+$white:       #FFFFFF;
+$white-100:   #F5F5F5;
+$white-200:   #F8EFEF;
+$white-t-50:  rgba(255, 255, 255, .5);
+$white-t-70:  rgba(255, 255, 255, .7);
+$white-t-80:  rgba(255, 255, 255, .8);
+
+/* Decorative elements */

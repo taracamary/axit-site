@@ -1,0 +1,33 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.comments-section {
+  @include section-grid-markup();
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content rem-calc(70) max-content rem-calc(70) max-content;
+    column-gap: rem-calc(105);
+    padding: rem-calc(80) rem-calc(16) rem-calc(120);
+
+    @include media-breakpoint-down(md) {
+      column-gap: rem-calc(50);
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: initial;
+      grid-template-rows: initial;
+      row-gap: rem-calc(32);
+    }
+  }
+
+  .comment-card {
+    grid-row: 5/-1;
+
+    @include media-breakpoint-down(sm) {
+      grid-row: initial;
+    }
+  }
+}

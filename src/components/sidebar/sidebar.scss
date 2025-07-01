@@ -1,0 +1,61 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.bm-burger-button {
+  position: absolute;
+  top: rem-calc(30);
+  right: rem-calc(16);
+  width: rem-calc(30);
+  height: rem-calc(25);
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.bm-burger-bars {
+  background: $white-t-70;
+}
+
+.bm-burger-bars-hover {
+  background: $white;
+}
+
+.bm-cross-button {
+  right: rem-calc(16) !important;
+  top: rem-calc(22) !important;
+}
+
+.bm-cross {
+  background: $white-t-70;
+  width: rem-calc(3) !important;
+  height: rem-calc(30) !important;
+}
+
+.bm-menu-wrap {
+  top: 0;
+  width: 80% !important;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.bm-menu {
+  overflow: hidden;
+  padding: rem-calc(85) rem-calc(16) rem-calc(16);
+  background: $black;
+}
+
+.bm-overlay {
+  top: 0 !important;
+}
+
+.sidebar__nav {
+  display: block;
+
+  .nav__item {
+    margin: rem-calc(16) rem-calc(20) rem-calc(16) 0;
+  }
+}

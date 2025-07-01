@@ -1,0 +1,16 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/functions';
+@import '../../../../scss/mixins';
+
+.social-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: rem-calc(16);
+
+  @include media-breakpoint-down(sm) {
+    justify-content: space-evenly;
+    gap: rem-calc(15);
+  }
+}

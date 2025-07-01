@@ -1,0 +1,29 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.footer {
+  padding: rem-calc(30) rem-calc(16) rem-calc(15);
+  background-color: $black;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-items {
+    img {
+      height: rem-calc(23);
+
+      @include media-breakpoint-up(sm) {
+        margin: 0 rem-calc(15);
+      }
+    }
+  }
+
+  &__privacy {
+    margin: rem-calc(18) 0 0;
+  }
+}

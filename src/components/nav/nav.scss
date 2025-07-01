@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: rem-calc(48);
+    }
+  }
+
+  &__link {
+    font-size: $fsz-15;
+    font-weight: $font-weight-semi-bold;
+    line-height: unitless-lh(15, 20);
+    color: $white-t-70;
+    padding: rem-calc(4);
+  }
+}

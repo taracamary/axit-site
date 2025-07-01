@@ -1,0 +1,36 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/functions';
+@import '../../../../scss/mixins';
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem-calc(70);
+    height: rem-calc(70);
+    border: 1px solid $red;
+    border-radius: 50%;
+  }
+
+  &__title {
+    margin: rem-calc(30) auto rem-calc(16);
+    font-size: $fsz-20;
+    line-height: unitless-lh(20, 27);
+    font-weight: $font-weight-bold;
+    color: $gray;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: $fsz-14;
+    line-height: unitless-lh(14, 19);
+    color: $black;
+    text-align: center;
+  }
+}

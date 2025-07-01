@@ -1,0 +1,52 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/functions';
+@import '../../../../scss/mixins';
+
+.comment-card {
+  &__text {
+    padding: rem-calc(15);
+    margin: 0 0 rem-calc(22);
+    font-size: $fsz-14;
+    line-height: unitless-lh(14, 19);
+    background: $gray-400;
+    border-radius: 7px;
+    color: $gray-100;
+    text-align: center;
+  }
+
+  &__author {
+    display: grid;
+    column-gap: rem-calc(16);
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, max-content);
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+  }
+
+  &__author-img {
+    width: rem-calc(70);
+    height: rem-calc(70);
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    border-radius: 50%;
+  }
+
+  &__author-name {
+    margin: 0;
+    font-size: $fsz-20;
+    font-weight: $font-weight-semi-bold;
+    line-height: unitless-lh(20, 27);
+    color: $gray;
+    text-align: right;
+  }
+
+  &__author-profession {
+    font-size: $fsz-14;
+    line-height: unitless-lh(14, 19);
+    color: $gray-100;
+    text-align: right;
+  }
+}

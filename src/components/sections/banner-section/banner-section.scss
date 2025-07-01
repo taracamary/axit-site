@@ -1,0 +1,128 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.banner {
+  background: url(../../../images/banner-background.jpg) center center / cover no-repeat $gray;
+
+  &__container {
+    padding: rem-calc(110) rem-calc(16);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, max-content);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: initial;
+      padding: rem-calc(50) rem-calc(16);
+    }
+  }
+
+  &__title {
+    margin: 0 0 rem-calc(32);
+    font-family: $raleway-font;
+    font-size: $fsz-36;
+    font-weight: $font-weight-regular;
+    line-height: unitless-lh(36, 42);
+    color: $white;
+
+    @include media-breakpoint-down(xs) {
+      font-size: $fsz-30;
+      line-height: unitless-lh(30, 36);
+      text-align: center;
+    }
+  }
+
+  .decorative-line {
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+    }
+  }
+
+  &__subtitle {
+    margin: rem-calc(40) 0;
+    font-family: $raleway-font;
+    font-size: $fsz-16;
+    font-weight: $font-weight-light;
+    line-height: unitless-lh(16, 19);
+    color: $white-t-80;
+
+    @include media-breakpoint-down(xs) {
+      margin: rem-calc(40) auto;
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+
+  &__button {
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-self: flex-start;
+    flex: 1 0 rem-calc(370);
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: rem-calc(16);
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    background-color: $white;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+      grid-row: initial;
+      margin: rem-calc(32) auto 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+      min-width: initial;
+    }
+  }
+
+  .form {
+    flex: 1 0 auto;
+    margin-top: rem-calc(60);
+
+    &__input {
+      margin: rem-calc(20) rem-calc(60);
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin: rem-calc(20) rem-calc(16);
+      }
+    }
+
+    &__textarea {
+      display: none;
+    }
+
+    &__button {
+      margin-top: rem-calc(60);
+    }
+  }
+
+  &__form-title {
+    margin: 0 rem-calc(60);
+    font-size: $fsz-20;
+    line-height: unitless-lh(20, 27);
+    color: $gray;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 rem-calc(16);
+    }
+
+    span {
+      color: $coral;
+    }
+  }
+}

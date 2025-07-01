@@ -1,0 +1,30 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.benefits-section {
+  @include section-grid-markup();
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content rem-calc(70) max-content rem-calc(70) max-content;
+    column-gap: rem-calc(30);
+    padding: rem-calc(80) rem-calc(16) rem-calc(116);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: initial;
+      grid-template-rows: initial;
+      row-gap: rem-calc(32);
+      padding: rem-calc(50) rem-calc(16);
+    }
+  }
+
+  .benefit-card {
+    grid-row: 5/-1;
+
+    @include media-breakpoint-down(sm) {
+      grid-row: initial;
+    }
+  }
+}

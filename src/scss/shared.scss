@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+  max-width: rem-calc(1204);
+  margin: 0 auto;
+  padding: 0 rem-calc(16);
+}
+
+.button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: rem-calc(1);
+  height: rem-calc(1);
+  margin: rem-calc(-1);
+  clip: rect(0 0 0 0);
+}

@@ -1,0 +1,34 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.button {
+  &__download {
+    width: fit-content;
+    padding: rem-calc(10) rem-calc(25);
+    color: $white;
+  }
+
+  &__transparent {
+    background-color: transparent;
+    border: 1px solid $white;
+
+    &:hover,
+    &:focus {
+      background-color: $coral;
+      border-color: $coral;
+    }
+  }
+
+  &__color {
+    background-color: $coral;
+    border: 1px solid $coral;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $coral;
+      border: 1px solid $coral;
+    }
+  }
+}

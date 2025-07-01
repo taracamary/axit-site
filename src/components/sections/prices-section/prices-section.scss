@@ -1,0 +1,37 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.prices-section {
+  @include section-grid-markup();
+  background-color: $white-100;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content rem-calc(70) max-content rem-calc(50) max-content;
+    column-gap: rem-calc(78);
+    padding: rem-calc(80) rem-calc(16) rem-calc(60);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: initial;
+      grid-template-rows: initial;
+      row-gap: rem-calc(32);
+    }
+  }
+
+
+  .price-card {
+    grid-row: 5/-1;
+
+    @include media-breakpoint-down(sm) {
+      grid-row: initial;
+    }
+
+    &:nth-of-type(2) {
+      @include media-breakpoint-up(sm) {
+        margin-top: rem-calc(-16);
+      }
+    }
+  }
+}

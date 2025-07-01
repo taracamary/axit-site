@@ -1,0 +1,116 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.tabs-section {
+  &__container {
+    display: grid;
+    row-gap: rem-calc(10);
+    grid-template-columns: rem-calc(110) rem-calc(110) 1fr;
+    grid-template-rows: repeat(3, rem-calc(110));
+    padding: rem-calc(125) rem-calc(16);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: rem-calc(110) rem-calc(50) 1fr;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem-calc(32);
+      padding: rem-calc(50) rem-calc(16);
+    }
+  }
+
+  &__controllers {
+    display: flex;
+    flex-direction: column;
+    gap: rem-calc(10);
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+
+  &__controllers-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem-calc(110);
+    height: rem-calc(110);
+    font-size: $fsz-15;
+    line-height: unitless-lh(15, 20);
+    font-weight: $font-weight-bold;
+    background-color: $gray;
+    border-radius: 4px;
+    color: $white;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+
+    &--active {
+      background-color: $coral;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: max-content 1fr max-content;
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    column-gap: rem-calc(50);
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: initial;
+    }
+  }
+
+  &__content-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 0 rem-calc(60);
+    font-weight: $font-weight-bold;
+    line-height: unitless-lh(20, 27);
+    color: $black;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: rem-calc(24);
+      text-align: center;
+    }
+  }
+
+  &__content-description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    flex: 1 0 auto;
+    margin: 0 0 rem-calc(24);
+    font-size: $fsz-14;
+    line-height: unitless-lh(14, 19);
+    color: $gray-100;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

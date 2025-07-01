@@ -1,0 +1,46 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.contact-section {
+  @include section-grid-markup();
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content rem-calc(70) max-content rem-calc(90) max-content;
+    padding: rem-calc(80) rem-calc(16) rem-calc(45);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-rows: max-content rem-calc(70) max-content rem-calc(50) max-content;
+    }
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 1/-1;
+    grid-row: 5/-1;
+    column-gap: rem-calc(220);
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1/-1;
+    }
+
+    &__input {
+      padding: rem-calc(32) 0;
+    }
+
+    &__textarea {
+      grid-column: 2/3;
+      grid-row: 1/-1;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../../scss/variables';
+@import '../../../scss/functions';
+@import '../../../scss/mixins';
+
+.portfolio-section {
+  @include section-grid-markup();
+  background: url(../../../images/portfolio-background.jpg) center center / cover no-repeat $gray;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content rem-calc(70) max-content rem-calc(50) max-content;
+    column-gap: rem-calc(78);
+    padding: rem-calc(60) rem-calc(16) rem-calc(40);
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__subtitle {
+    color: $white-t-80;
+  }
+
+  &__button {
+    grid-column: 1/-1;
+    grid-row: 5/-1;
+    margin: 0 auto;
+  }
+}

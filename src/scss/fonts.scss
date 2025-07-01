@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), url("../../assets/fonts/open-sans/OpenSans-Regular.woff2") format("woff2"), url("../../assets/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans"), url("../../assets/fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2"), url("../../assets/fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans"), url("../../assets/fonts/open-sans/OpenSans-Bold.woff2") format("woff2"), url("../../assets/fonts/open-sans/OpenSans-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Raleway"), url("../../assets/fonts/raleway/Raleway-Light.woff2") format("woff2"), url("../../assets/fonts/raleway/Raleway-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), url("../../assets/fonts/raleway/Raleway-Regular.woff2") format("woff2"), url("../../assets/fonts/raleway/Raleway-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway"), url("../../assets/fonts/raleway/Raleway-Bold.woff2") format("woff2"), url("../../assets/fonts/raleway/Raleway-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("../../assets/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../../assets/fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+}

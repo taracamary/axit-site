@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+@import '../../scss/functions';
+@import '../../scss/mixins';
+
+.section-subtitle {
+  margin: 0 auto;
+  font-size: $fsz-14;
+  line-height: unitless-lh(14, 19);
+  color: $gray-100;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}
