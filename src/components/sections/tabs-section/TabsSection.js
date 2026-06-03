@@ -31,7 +31,7 @@ const TabsSection = () => {
             value={"Download"}
           />
 
-          <img className="tabs-section__image" src={tabsImage1} alt="Tabs section image" />
+          <img className="tabs-section__image" src={tabsImage1} alt="City skyline illustration" />
         </div>
 
       </div>

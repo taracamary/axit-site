@@ -12,26 +12,26 @@ import rss from '../../../../images/socials/rss.svg';
 const SocialItems = () => {
   return (
     <article className="social-items">
-      <a href="#">
-        <img src={facebook} alt="Facebook icon" />
+      <a href="#!">
+        <img src={facebook} alt="Facebook" />
       </a>
-      <a href="#">
-        <img src={twitter} alt="Twitter icon" />
+      <a href="#!">
+        <img src={twitter} alt="Twitter" />
       </a>
-      <a href="#">
-        <img src={googlePlus} alt="Google Plus icon" />
+      <a href="#!">
+        <img src={googlePlus} alt="Google Plus" />
       </a>
-      <a href="#">
-        <img src={pinterest} alt="Pinterest icon" />
+      <a href="#!">
+        <img src={pinterest} alt="Pinterest" />
       </a>
-      <a href="#">
-        <img src={instagram} alt="Instagram icon" />
+      <a href="#!">
+        <img src={instagram} alt="Instagram" />
       </a>
-      <a href="#">
-        <img src={stumbleupon} alt="Stumbleupon icon" />
+      <a href="#!">
+        <img src={stumbleupon} alt="Stumbleupon" />
       </a>
-      <a href="#">
-        <img src={rss} alt="Rss icon" />
+      <a href="#!">
+        <img src={rss} alt="Rss" />
       </a>
     </article>
   );

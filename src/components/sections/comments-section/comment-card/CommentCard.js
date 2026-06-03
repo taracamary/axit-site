@@ -8,7 +8,7 @@ const CommentCard = ({ authorImage, authorName, authorProfession }) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestiae quo commodi cupiditate, repudiandae debitis harum libero corrupti enim fugit eius inventore officia optio itaque possimus odio, quis officiis similique?
       </p>
       <div className="comment-card__author">
-        <img className="comment-card__author-img" src={authorImage} alt="Author image" />
+        <img className="comment-card__author-img" src={authorImage} alt={authorName} />
         <h3 className="comment-card__author-name">{authorName}</h3>
         <span className="comment-card__author-profession">{authorProfession}</span>
       </div>
