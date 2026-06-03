@@ -40,17 +40,26 @@ Styles are engineered using an advanced, decoupled preprocessor directory (`src/
 
 ## 💻 Local Development Setup
 
-Make sure you have Node.js and npm installed.
-
-1. **Clone the Repository:**
-```bash
-   git clone https://github.com/taracamary/axit-site.git
+Make sure you have Node.js and npm installed
 
 ```bash
-   cd axit-site
+git clone https://github.com/taracamary/axit-site.git
+
+```
 
 ```bash
-   npm install
+cd axit-site
+
+```
 
 ```bash
-   npm start
+npm install
+
+```
+
+```bash
+npm start
+
+```
+
+*The application will mount locally. Navigate to: `http://localhost:8080/homepage.html`*
