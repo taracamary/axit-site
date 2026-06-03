@@ -1,47 +1,56 @@
-# AXIT
+# AXIT — High-Fidelity Component-Driven UI Prototype
 
-## 🚀 Project Description
-**AXIT** is a modern, responsive one-page prototype template built with React and SCSS—perfect for showcasing beautiful designs and interactive UI patterns. It lets you:
+A modern, production-ready corporate landing page prototype built with **React 18** and **Modular SCSS**. This project serves as an architectural demonstration of the **Atomic Design Philosophy**, showcasing highly isolated, reusable UI primitives, scalable styling systems, and fluid layout mechanics
 
-- Showcase a full-screen hero header with background imagery and a signup form   
-- Highlight key features with custom iconography and concise copy  
-- Display pricing options side-by-side in a clean card layout  
-- Collect customer feedback via a testimonial slider  
-- Include a “Contact Us” form section for lead capture  
-- Offer footer social links and a dropdown menu for mobile navigation  
-
-Built to demonstrate best practices in component-driven UI development, AXIT is a great starting point for landing-page prototypes or production sites.
+* **Live Demo:** https://taracamary.github.io/axit-site/
+* **Target Domain:** SaaS Landing Pages, Corporate Prototypes, High-Conversion Marketing Interfaces
 
 ---
 
-## 🔗 Live Demo
+## 🏗️ Technical Architecture & Key Engineering Solutions
 
-[View the live demo on GitHub Pages](https://taracamary.github.io/axit-site/)
+### 1. Atomic Component Splitting & Reusability
+The React layer (`src/components/`) is split into independent structural layout nodes and global reusable primitives:
+* **UI Primitives:** Elements like `/button`, `/logo`, and `/decorative-line` are fully decoupled from layout concerns, relying exclusively on props for customization
+* **Layout Blocks:** Global structural components (`/header`, `/footer`, `/nav`, `/sidebar`) manage positioning, while individual view segments are isolated inside the `/sections` wrapper to optimize React's virtual DOM reconciliation process
 
----
+### 2. Tokenized & Scalable Styling Engine
+Styles are engineered using an advanced, decoupled preprocessor directory (`src/scss/`):
+* **`variables.scss` & `functions.scss`:** Centralized design tokens governing theme colors, strict semantic typography hierarchies, and automated pixel-to-rem calculation systems
+* **BEM Encapsulation:** Class names strictly adhere to BEM guidelines to eliminate CSS selector nesting side-effects, guaranteeing low specificity and optimal rendering speeds during deep browser layout passes
+* **Layout Integrity:** Achieves perfect cross-browser fluidity using dynamic CSS Grid matrices and Flexbox systems without the overhead of heavy visual utility frameworks
 
-## 🛠️ Technologies Used
-
-- **React** (via Create React App)  
-- **SCSS** for modular, maintainable styling  
-- **CSS Flexbox & Grid** for flexible layouts  
-- **Semantic Class Naming** by BEM-style conventions for clear, maintainable markup 
-- **React-Burger-Menu** for the collapsible sidebar  
-- **Font Awesome** for crisp, scalable icons  
-- **Babel** for modern JavaScript transpilation   
-- **npm** package management
-
----
-
-## 📸 Screenshot
-
-![Axit Screenshot](src/images/screenshot.jpg)
+### 3. Accessible Interactive Patterns
+* Built-in interactive tabs feature hardware-accelerated smooth opacity transitions
+* Accessible cross-device sidebar navigation powered by responsive viewport detection
+* Semantic HTML5 structure engineered to conform with web accessibility best practices
 
 ---
 
-## 🚀 Quick Start
+## 🛠️ Complete Tech Stack
 
-- To install `node_modules` run `npm install`.
-- To run project in dev mode run `npm start`.
-- To create production build run `npm run build`.
-- Link to the website `http://localhost:3000/`.
+* **Frontend Library:** React 18 (Component-driven view architecture)
+* **Styling Preprocessor:** SCSS utilizing advanced mixins, custom utility functions, and responsive media abstraction layers
+* **Layout Systems:** Comprehensive CSS Grid & Flexbox layouts
+* **Navigation:** React-Burger-Menu for touch-optimized mobile drawer interactions
+* **Asset Optimization:** Font Awesome integration for resolution-independent iconography
+* **Package Management & Automation:** npm ecosystem with automated `gh-pages` deployment integration
+
+---
+
+## 💻 Local Development Setup
+
+Make sure you have Node.js and npm installed.
+
+1. **Clone the Repository:**
+```bash
+   git clone https://github.com/taracamary/axit-site.git
+
+```bash
+   cd axit-site
+
+```bash
+   npm install
+
+```bash
+   npm start
