@@ -1,9 +1,15 @@
 import React from 'react';
 import './button.scss';
 
-const Button = ({ value, className }) => {
+const Button = ({ value, className, onClick }) => {
   return (
-    <a href="#" className={`button button__download ${className}`}>{value}</a>
+    <button
+      type="button"
+      className={`button button__download ${className}`}
+      onClick={onClick}
+    >
+      {value}
+    </button>
   );
 };
 
