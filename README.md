@@ -2,7 +2,7 @@
 
 A modern, production-ready corporate landing page prototype built with **React 18** and **Modular SCSS**. This project serves as an architectural demonstration of the **Atomic Design Philosophy**, showcasing highly isolated, reusable UI primitives, scalable styling systems, and fluid layout mechanics
 
-* **Live Demo:** https://taracamary.github.io/axit-site/
+* **Live Demo:** [https://taracamary.github.io/axit-site/](https://maria-kapiturko-axit-site.vercel.app/)
 * **Target Domain:** SaaS Landing Pages, Corporate Prototypes, High-Conversion Marketing Interfaces
 
 ---
