@@ -1,9 +1,9 @@
 import React from 'react';
 import './decorative-line.scss';
 
-const DecorativeLine = ({ className }) => {
+const DecorativeLine = ({ className = '' }) => {
   return (
-    <hr className={`decorative-line ${className}`} />
+    <hr className={`decorative-line ${className}`.trim()} />
   );
 };
 

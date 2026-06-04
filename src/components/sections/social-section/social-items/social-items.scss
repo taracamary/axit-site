@@ -13,4 +13,12 @@
     justify-content: space-evenly;
     gap: rem-calc(15);
   }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    display: flex;
+  }
 }

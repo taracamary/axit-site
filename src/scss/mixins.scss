@@ -31,8 +31,6 @@
   }
 }
 
-/* Media queries */
-
 @mixin section-grid-markup() {
   &__title {
     grid-column: 1/-1;

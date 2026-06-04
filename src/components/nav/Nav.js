@@ -1,12 +1,12 @@
 import React from 'react';
 import './nav.scss';
 
-const Nav = ({ className }) => {
+const Nav = ({ className = '' }) => {
   return (
     <nav>
-      <ul className={`nav ${className}`}>
+      <ul className={`nav ${className}`.trim()}>
         <li className="nav__item">
-          <a className="nav__link" href="/#">Feautures</a>
+          <a className="nav__link" href="/#">Features</a>
         </li>
         <li className="nav__item">
           <a className="nav__link" href="/#">About</a>

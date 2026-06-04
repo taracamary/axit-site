@@ -1,7 +1,7 @@
 import React from 'react';
 import './price-card.scss';
 
-const PriceCard = ({ plan, cost, period }) => {
+const PriceCard = ({ plan, cost, period, features }) => {
   return (
     <article className="price-card">
       <header className="price-card__heading">
@@ -11,24 +11,11 @@ const PriceCard = ({ plan, cost, period }) => {
       </header>
       <div className="price-card__benefits">
         <ul className="price-card__benefits-list">
-          <li className="price-card__benefits-item">
-            1 gb of space
-          </li>
-          <li className="price-card__benefits-item">
-            1 gb of space
-          </li>
-          <li className="price-card__benefits-item">
-            1 gb of space
-          </li>
-          <li className="price-card__benefits-item">
-            1 gb of space
-          </li>
-          <li className="price-card__benefits-item">
-            1 gb of space
-          </li>
-          <li className="price-card__benefits-item">
-            1 gb of space
-          </li>
+          {features.map((feature) => (
+            <li key={feature} className="price-card__benefits-item">
+              {feature}
+            </li>
+          ))}
         </ul>
       </div>
     </article>

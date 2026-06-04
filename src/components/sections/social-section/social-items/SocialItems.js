@@ -9,31 +9,27 @@ import instagram from '../../../../images/socials/instagram.svg';
 import stumbleupon from '../../../../images/socials/stumbleupon.svg';
 import rss from '../../../../images/socials/rss.svg';
 
+const SOCIAL_LINKS = [
+  { href: '#!', src: facebook,    alt: 'Facebook' },
+  { href: '#!', src: twitter,     alt: 'Twitter' },
+  { href: '#!', src: googlePlus,  alt: 'Google Plus' },
+  { href: '#!', src: pinterest,   alt: 'Pinterest' },
+  { href: '#!', src: instagram,   alt: 'Instagram' },
+  { href: '#!', src: stumbleupon, alt: 'Stumbleupon' },
+  { href: '#!', src: rss,         alt: 'RSS' },
+];
+
 const SocialItems = () => {
   return (
-    <article className="social-items">
-      <a href="#!">
-        <img src={facebook} alt="Facebook" />
-      </a>
-      <a href="#!">
-        <img src={twitter} alt="Twitter" />
-      </a>
-      <a href="#!">
-        <img src={googlePlus} alt="Google Plus" />
-      </a>
-      <a href="#!">
-        <img src={pinterest} alt="Pinterest" />
-      </a>
-      <a href="#!">
-        <img src={instagram} alt="Instagram" />
-      </a>
-      <a href="#!">
-        <img src={stumbleupon} alt="Stumbleupon" />
-      </a>
-      <a href="#!">
-        <img src={rss} alt="Rss" />
-      </a>
-    </article>
+    <ul className="social-items">
+      {SOCIAL_LINKS.map(({ href, src, alt }) => (
+        <li key={alt} className="social-items__item">
+          <a href={href} aria-label={alt} className="social-items__link">
+            <img src={src} alt="" />
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 

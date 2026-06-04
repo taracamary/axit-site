@@ -9,7 +9,7 @@ const CommentCard = ({ authorImage, authorName, authorProfession }) => {
       </p>
       <div className="comment-card__author">
         <img className="comment-card__author-img" src={authorImage} alt={authorName} />
-        <h3 className="comment-card__author-name">{authorName}</h3>
+        <p className="comment-card__author-name">{authorName}</p>
         <span className="comment-card__author-profession">{authorProfession}</span>
       </div>
     </article>

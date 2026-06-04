@@ -13,7 +13,8 @@ const Form = () => {
       <label className="visually-hidden" htmlFor="password">Password:</label>
       <input className="form__input" id="password" placeholder="Password" type="password" />
 
-      <textarea className="form__textarea" placeholder="Message"></textarea>
+      <label className="visually-hidden" htmlFor="message">Message:</label>
+      <textarea className="form__textarea" id="message" placeholder="Message"></textarea>
 
       <button className="button form__button" type="submit">Get started</button>
     </form>

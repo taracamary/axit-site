@@ -40,7 +40,7 @@
     }
 
     &__button {
-      display: none;
+      grid-column: 1/-1;
     }
   }
 }

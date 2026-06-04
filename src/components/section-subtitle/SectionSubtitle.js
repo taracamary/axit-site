@@ -1,9 +1,9 @@
 import React from 'react';
 import './section-subtitle.scss';
 
-const SectionSubtitle = ({ className, value }) => {
+const SectionSubtitle = ({ value, className = '' }) => {
   return (
-    <p className={`section-subtitle ${className}`}>{value}</p>
+    <p className={`section-subtitle ${className}`.trim()}>{value}</p>
   );
 };
 
