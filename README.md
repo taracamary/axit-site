@@ -36,7 +36,7 @@ The implementation focuses on clean, maintainable code rather than feature volum
 
 ## Architecture
 
-### SCSS
+### SCSS structure
 
 ```
 src/scss/
@@ -90,15 +90,12 @@ src/components/
 git clone https://github.com/taracamary/axit-site.git
 cd axit-site
 npm install
-
 npm start        # dev server → http://localhost:3000
-npm run build    # production build
-npm run deploy   # publish to GitHub Pages
 ```
 
 ---
 
-## What This Project Covers
+## What I focused on
 
 - Building a scalable SCSS system with design tokens, custom functions, and responsive mixins
 - Structuring reusable React components with clean prop interfaces
@@ -114,3 +111,7 @@ npm run deploy   # publish to GitHub Pages
 - **Location:** Minsk, Belarus (Available for global remote cooperation)
 - **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/taracamary)
 - **GitHub:** [Follow on GitHub](https://github.com/taracamary)
+
+---
+
+_This project is part of a frontend portfolio focused on production-level layout structure, styling architecture, and UI interactions_
