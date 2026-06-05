@@ -11,16 +11,16 @@ const PortfolioSection = () => {
       <div className="portfolio-section__container wrapper">
         <SectionTitle
           className="portfolio-section__title"
-          value={"STYLISH AXURE DESIGN"}
+          value="STYLISH AXURE DESIGN"
         />
         <DecorativeLine className="decorative-line--coral" />
         <SectionSubtitle
           className="portfolio-section__subtitle"
-          value={"Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!"}
+          value="Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!"
         />
         <Button
           className="button__transparent portfolio-section__button"
-          value={"Download"}
+          value="Download"
         />
       </div>
     </section>

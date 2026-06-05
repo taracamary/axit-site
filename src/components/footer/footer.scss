@@ -13,13 +13,11 @@
     justify-content: center;
   }
 
-  .social-items {
-    img {
-      height: rem-calc(23);
+  .social-items__link img {
+    height: rem-calc(23);
 
-      @include media-breakpoint-up(sm) {
-        margin: 0 rem-calc(15);
-      }
+    @include media-breakpoint-up(sm) {
+      margin: 0 rem-calc(15);
     }
   }
 

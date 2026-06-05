@@ -9,16 +9,16 @@ const BannerSection = () => {
   return (
     <section className="banner">
       <div className="banner__container wrapper">
-        <Logo className="logo__large" />
+        <Logo className="logo--large" />
         <h1 className="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
         <DecorativeLine className="decorative-line--white" />
         <p className="banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</p>
         <Button
           className="button__transparent banner__button"
-          value={"Download"}
+          value="Download"
         />
         <article className="banner__form">
-          <h2 className="banner__form-title">Try Your <span>FREE</span> Trial Today</h2>
+          <h2 className="banner__form-title">Try Your <span className="banner__form-title-accent">FREE</span> Trial Today</h2>
           <Form />
         </article>
       </div>

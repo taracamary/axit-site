@@ -11,12 +11,12 @@ const ContactSection = () => {
       <div className="contact-section__container wrapper">
         <SectionTitle
           className="contact-section__title"
-          value={"contact us"}
+          value="Contact Us"
         />
         <DecorativeLine className="decorative-line--coral" />
         <SectionSubtitle
           className="contact-section__subtitle"
-          value={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+          value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         />
         <Form />
       </div>

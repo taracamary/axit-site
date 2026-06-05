@@ -15,12 +15,12 @@
     color: $coral;
   }
 
-  &__small {
+  &--small {
     font-size: $fsz-30;
     line-height: unitless-lh(30, 35);
   }
 
-  &__large {
+  &--large {
     margin-bottom: rem-calc(32);
     font-size: $fsz-60;
     line-height: unitless-lh(60, 70);
