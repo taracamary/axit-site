@@ -2,7 +2,7 @@
 
 Corporate landing page — frontend portfolio project
 
-**Live demo:** [https://maria-kapiturko-axit-site.vercel.app/](https://maria-kapiturko-axit-site.vercel.app/)
+**Live demo:** [https://maria-kapiturko-axit-site.vercel.app](https://maria-kapiturko-axit-site.vercel.app)
 
 ---
 
@@ -46,15 +46,11 @@ The implementation focuses on clean, maintainable code rather than feature volum
 
 ## UI / UX Highlights
 
-- Banner section uses a two-column CSS Grid — hero text and CTA on the left, signup form card on the right; collapses to a single column at `≤ 575px`
-- Tab buttons highlight the active state with a coral background; clicking switches content in place without a page reload; buttons go full-width at `≤ 480px`
+- Tab buttons highlight the active state with a coral background; clicking switches content in place without a page reload
 - Mobile sidebar slides in from the right below `768px`; the desktop nav hides automatically via CSS — no JS involved in the toggle visibility logic
 - All interactive buttons have `hover` and `focus` states with `background-color` and `border-color` transitions (`0.2s ease`)
 - Each content section follows the same visual rhythm: centered title → short decorative `<hr>` line → subtitle → content grid
 - Decorative separator lines are `64px` wide, in white on dark backgrounds and coral on light — controlled via BEM modifiers
-- Contact form uses a two-column grid: inputs stack on the left, textarea spans the full height of the right column
-- Social icons are distributed with `space-between` on desktop and `space-evenly` on mobile to handle varying icon counts cleanly
-- Pricing middle card is offset with a negative top margin to create subtle visual elevation among the three plan cards
 
 ---
 
