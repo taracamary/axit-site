@@ -1,4 +1,3 @@
-import React from 'react';
 import './footer.scss';
 import SocialItems from '../sections/social-section/social-items/SocialItems';
 

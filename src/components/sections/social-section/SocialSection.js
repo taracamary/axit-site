@@ -1,4 +1,3 @@
-import React from 'react';
 import './social-section.scss';
 import SocialItems from './social-items/SocialItems';
 import SectionSubtitle from '../../section-subtitle/SectionSubtitle';

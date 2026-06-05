@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './tabs-section.scss';
 import tabsImage1 from '../../../images/tabs/tabs-image-1.png';
 import Button from '../../button/Button';

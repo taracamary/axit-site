@@ -1,4 +1,3 @@
-import React from 'react';
 import './benefit-card.scss';
 
 const BenefitCard = ({ image, title, description }) => {

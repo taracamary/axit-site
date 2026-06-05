@@ -1,4 +1,3 @@
-import React from 'react';
 import './comment-card.scss';
 
 const CommentCard = ({ authorImage, authorName, authorProfession }) => {

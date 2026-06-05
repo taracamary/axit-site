@@ -80,9 +80,6 @@
       margin: rem-calc(32) auto 0;
     }
 
-    @include media-breakpoint-down(xs) {
-      min-width: initial;
-    }
   }
 
   .form {

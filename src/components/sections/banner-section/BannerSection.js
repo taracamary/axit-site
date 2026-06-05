@@ -1,4 +1,3 @@
-import React from 'react';
 import './banner-section.scss';
 import Logo from '../../logo/Logo';
 import Form from '../../form/Form';

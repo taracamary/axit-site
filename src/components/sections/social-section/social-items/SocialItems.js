@@ -1,4 +1,3 @@
-import React from 'react';
 import './social-items.scss';
 
 import facebook from '../../../../images/socials/facebook.svg';

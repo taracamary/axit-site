@@ -1,4 +1,3 @@
-import React from 'react';
 import './prices-section.scss';
 import SectionTitle from '../../section-title/SectionTitle';
 import DecorativeLine from '../../decorative-line/DecorativeLine';

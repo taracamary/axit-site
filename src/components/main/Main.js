@@ -1,4 +1,3 @@
-import React from 'react';
 import './main.scss';
 import BannerSection from '../sections/banner-section/BannerSection';
 import SocialSection from '../sections/social-section/SocialSection';

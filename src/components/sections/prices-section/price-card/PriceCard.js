@@ -1,4 +1,3 @@
-import React from 'react';
 import './price-card.scss';
 
 const PriceCard = ({ plan, cost, period, features }) => {
