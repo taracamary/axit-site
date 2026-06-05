@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './tabs-section.scss';
-import tabsImage1 from '../../../images/tabs/tabs-image-1.png';
+import tabsImage1 from '../../../images/tabs/tabs-image-1.svg';
 import Button from '../../button/Button';
 
 const TABS = [
@@ -39,6 +39,7 @@ const TabsSection = () => {
           {TABS.map((tab, index) => (
             <button
               key={tab.label}
+              id={`tab-${index}`}
               role="tab"
               aria-selected={activeIndex === index}
               aria-controls="tabs-panel"
@@ -54,6 +55,7 @@ const TabsSection = () => {
         <div
           id="tabs-panel"
           role="tabpanel"
+          aria-labelledby={`tab-${activeIndex}`}
           className="tabs-section__content"
         >
           <h3 className="tabs-section__content-title">{activeTab.title}</h3>
@@ -61,7 +63,7 @@ const TabsSection = () => {
             {activeTab.description}
           </p>
           <Button
-            className="button__color tabs-section__button"
+            className="button--color tabs-section__button"
             value="Download"
           />
           <img

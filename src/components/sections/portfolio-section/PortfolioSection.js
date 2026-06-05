@@ -18,7 +18,7 @@ const PortfolioSection = () => {
           value="Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!"
         />
         <Button
-          className="button__transparent portfolio-section__button"
+          className="button--transparent portfolio-section__button"
           value="Download"
         />
       </div>

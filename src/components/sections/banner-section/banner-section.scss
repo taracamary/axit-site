@@ -3,7 +3,7 @@
 @import '../../../scss/mixins';
 
 .banner {
-  background: url(../../../images/banner-background.jpg) center center / cover no-repeat $gray;
+  background: url(../../../images/banner-background.svg) center center / cover no-repeat $gray;
 
   &__container {
     padding: rem-calc(110) rem-calc(16);
@@ -103,7 +103,11 @@
     }
 
     &__button {
-      margin-top: rem-calc(60);
+      margin: rem-calc(60) rem-calc(60) rem-calc(60);
+
+      @include media-breakpoint-down(sm) {
+        margin: rem-calc(60) rem-calc(16) rem-calc(16);
+      }
     }
   }
 

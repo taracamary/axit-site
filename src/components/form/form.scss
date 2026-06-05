@@ -15,7 +15,7 @@
     background-color: $white;
     border: none;
     border-bottom: 1px solid $gray-200;
-    color: $gray-200;
+    color: $gray;
 
     padding-bottom: rem-calc(20);
     margin-top: rem-calc(20);
@@ -26,14 +26,19 @@
   }
 
   &__button {
-    width: 100%;
-    padding: rem-calc(16);
     font-family: $open-sans-font;
     font-size: $fsz-15;
     font-weight: $font-weight-semi-bold;
     line-height: unitless-lh(15, 20);
     background-color: $coral;
     color: $white;
+
+    &.button {
+      display: block;
+      width: auto;
+      box-sizing: border-box;
+      padding: rem-calc(16);
+    }
 
     &:hover,
     &:focus {

@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <>
+      <a className="skip-link" href="#main">Skip to main content</a>
       <Header />
       <Main />
       <Footer />

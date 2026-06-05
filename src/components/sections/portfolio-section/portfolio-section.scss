@@ -4,7 +4,7 @@
 
 .portfolio-section {
   @include section-grid-markup();
-  background: url(../../../images/portfolio-background.jpg) center center / cover no-repeat $gray;
+  background: url(../../../images/portfolio-background.svg) center center / cover no-repeat $gray;
 
   &__container {
     display: grid;

@@ -10,7 +10,7 @@ import ContactSection from '../sections/contact-section/ContactSection';
 
 const Main = () => {
   return (
-    <main className="main">
+    <main className="main" id="main" tabIndex={-1}>
       <BannerSection />
       <SocialSection />
       <TabsSection />

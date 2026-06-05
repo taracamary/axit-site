@@ -21,3 +21,20 @@
   margin: rem-calc(-1);
   clip: rect(0 0 0 0);
 }
+
+.skip-link {
+  position: absolute;
+  top: rem-calc(8);
+  left: rem-calc(8);
+  z-index: 1000;
+  padding: rem-calc(8) rem-calc(16);
+  color: $white;
+  background-color: $black;
+  border-radius: 4px;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+
+  &:focus {
+    transform: translateY(0);
+  }
+}

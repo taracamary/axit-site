@@ -3,7 +3,7 @@ import SectionTitle from '../../section-title/SectionTitle';
 import DecorativeLine from '../../decorative-line/DecorativeLine';
 import SectionSubtitle from '../../section-subtitle/SectionSubtitle';
 import CommentCard from './comment-card/CommentCard';
-import authorImage from '../../../images/avatar.png';
+import authorImage from '../../../images/avatar.svg';
 
 const COMMENTS = [
   {

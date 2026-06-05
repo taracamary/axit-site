@@ -13,7 +13,7 @@ const BannerSection = () => {
         <DecorativeLine className="decorative-line--white" />
         <p className="banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</p>
         <Button
-          className="button__transparent banner__button"
+          className="button--transparent banner__button"
           value="Download"
         />
         <article className="banner__form">
