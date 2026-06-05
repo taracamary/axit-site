@@ -34,42 +34,39 @@ The implementation focuses on clean, maintainable code rather than feature volum
 
 ---
 
+## What I focused on
+
+- Building a scalable SCSS system with design tokens, custom functions, and responsive mixins
+- Structuring reusable React components with clean prop interfaces
+- Applying BEM consistently across a multi-section layout
+- Implementing WAI-ARIA patterns for interactive widgets (tabs)
+- Keeping accessibility solid without a dedicated framework
+
+---
+
+## UI / UX Highlights
+
+- Banner section uses a two-column CSS Grid — hero text and CTA on the left, signup form card on the right; collapses to a single column at `≤ 575px`
+- Tab buttons highlight the active state with a coral background; clicking switches content in place without a page reload; buttons go full-width at `≤ 480px`
+- Mobile sidebar slides in from the right below `768px`; the desktop nav hides automatically via CSS — no JS involved in the toggle visibility logic
+- All interactive buttons have `hover` and `focus` states with `background-color` and `border-color` transitions (`0.2s ease`)
+- Each content section follows the same visual rhythm: centered title → short decorative `<hr>` line → subtitle → content grid
+- Decorative separator lines are `64px` wide, in white on dark backgrounds and coral on light — controlled via BEM modifiers
+- Contact form uses a two-column grid: inputs stack on the left, textarea spans the full height of the right column
+- Social icons are distributed with `space-between` on desktop and `space-evenly` on mobile to handle varying icon counts cleanly
+- Pricing middle card is offset with a negative top margin to create subtle visual elevation among the three plan cards
+
+---
+
 ## Architecture
 
-### SCSS structure
-
-```
-src/scss/
-├── functions.scss   — rem-calc(), unitless-lh(), breakpoint resolution
-├── variables.scss   — color tokens, font stacks, font-size scale, breakpoints
-├── mixins.scss      — media-breakpoint-up/down, section-grid-markup
-├── fonts.scss       — @font-face (Open Sans, Raleway, Roboto)
-├── base.scss        — box-sizing reset, element defaults
-├── shared.scss      — .wrapper, .button base reset, .visually-hidden
-└── index.scss       — single import entry point
-```
-
-Each component has its own `.scss` file co-located alongside the `.js` file. BEM is applied consistently — flat specificity, no deeply nested selectors.
-
-### Component structure
-
-```
-src/components/
-├── button/              — variant-based (transparent / color)
-├── decorative-line/     — modifier-driven (white / coral)
-├── form/                — shared across banner and contact sections
-├── header/ nav/ sidebar/ logo/
-├── section-title/ section-subtitle/
-└── sections/
-    ├── banner-section/
-    ├── benefits-section/   └── benefit-card/
-    ├── comments-section/   └── comment-card/
-    ├── prices-section/     └── price-card/
-    ├── social-section/     └── social-items/
-    ├── tabs-section/
-    ├── portfolio-section/
-    └── contact-section/
-```
+- Each component lives in its own folder with a co-located `.scss` file — styles and markup stay together
+- Global SCSS is split into focused partials: `variables`, `functions`, `mixins`, `base`, `shared`, loaded through a single `index.scss` entry point
+- BEM naming throughout — flat specificity, no deep nesting
+- Design tokens (colors, font sizes, breakpoints) are centralized in `variables.scss`; pixel-to-rem conversion and line-height calculation are handled by custom SCSS functions
+- Layout built with CSS Grid for section-level structure and Flexbox for component internals — no utility framework
+- Responsive breakpoints managed via `media-breakpoint-up/down` mixins, consistent across all components
+- Build tooling: Create React App (react-scripts 5)
 
 ---
 
@@ -92,16 +89,6 @@ cd axit-site
 npm install
 npm start        # dev server → http://localhost:3000
 ```
-
----
-
-## What I focused on
-
-- Building a scalable SCSS system with design tokens, custom functions, and responsive mixins
-- Structuring reusable React components with clean prop interfaces
-- Applying BEM consistently across a multi-section layout
-- Implementing WAI-ARIA patterns for interactive widgets (tabs)
-- Keeping accessibility solid without a dedicated framework
 
 ---
 
